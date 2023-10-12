@@ -21,7 +21,7 @@ class CalculatorApp(UserControl):
             bgcolor=ft.colors.GREEN_300,
             border_radius=border_radius.all(10),
             padding=10,
-            content=Column(
+        content=Column(
                 controls=[
                     Row(controls=[self.result], alignment="end"),
                     Row(
@@ -255,7 +255,7 @@ class CalculatorApp(UserControl):
 
         elif operator == "÷":
             if operand2 == 0:
-                return "Error"
+                return "0"
             else:
                 return self.format_number(operand1 / operand2)
 
